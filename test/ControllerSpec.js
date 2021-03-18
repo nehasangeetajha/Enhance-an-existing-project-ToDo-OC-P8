@@ -167,7 +167,7 @@ describe('controller', function () {
 
 			// Expect view to have called showEntries for array
 			expect(view.render).toHaveBeenCalledWith('showEntries', todo);
-			// Expect view to ahve set filter to completed
+			// Expect view to have set filter to completed
 			expect(view.render).toHaveBeenCalledWith('setFilter', 'completed');	
 			// Expect model to be read and retrieve todos that are completed
 			expect(model.read).toHaveBeenCalledWith({completed: true}, jasmine.any(Function));
